@@ -18,6 +18,11 @@ import { PatientRegisterComponent } from './components/patient-register/patient-
 import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { SpecialistComponent } from './specialist/specialist.component';
+import { RegisterSpecialistComponent } from './register-specialist/register-specialist.component';
+import { ProfileSpecialistComponent } from './profile-specialist/profile-specialist.component';
+import { DataDonationsComponent } from './data-donations/data-donations.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const route: Routes = [
   {
@@ -36,7 +41,27 @@ const route: Routes = [
   {
     path: 'donations',
     component: DonationsComponent
-  }
+  },
+  {
+    path: 'DataDonationsComponent',
+    component: DataDonationsComponent
+  },
+  {
+    path: 'timegodmothers',
+    component: TimeGodmothersComponent
+  },
+  {
+    path: 'specialistcomponent',
+    component: SpecialistComponent
+  },
+  {
+    path: 'RegisterSpecialistComponent',
+    component: RegisterSpecialistComponent
+  },
+  {
+    path: 'PatientRegisterComponent',
+    component: PatientRegisterComponent
+  },
 ]
 
 @NgModule({
@@ -48,7 +73,12 @@ const route: Routes = [
     RegisterGodmothersComponent,
     DonationsComponent,
     PatientRegisterComponent,
-    PatientProfileComponent
+    PatientProfileComponent,
+    SpecialistComponent,
+    RegisterSpecialistComponent,
+    ProfileSpecialistComponent,
+    DataDonationsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
