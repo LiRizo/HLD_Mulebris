@@ -2,12 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { environment } from '../environments/environment';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { TimeGodmothersComponent } from './components/time-godmothers/time-godmothers.component';
@@ -84,10 +78,6 @@ const route: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(route),
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    AngularFirestoreModule,
-    AngularFireStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
