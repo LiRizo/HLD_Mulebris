@@ -26,7 +26,10 @@ import { TimeGodmothersComponent } from './components/time-godmothers/time-godmo
 import { DonationsComponent } from './components/donations/donations.component';
 import { DataDonationsComponent } from './data-donations/data-donations.component';
 
+import { FooterComponent } from './footer/footer.component';
+
 import { RouterModule, Routes } from '@angular/router';
+
 
 const route: Routes = [
   {
@@ -78,6 +81,10 @@ const route: Routes = [
     path: 'patientprofile',
     component: PatientProfileComponent
   },
+  {
+    path: 'footer',
+    component: FooterComponent
+  },
 ]
 
 @NgModule({
@@ -94,7 +101,8 @@ const route: Routes = [
     ProfileSpecialistComponent,
     DataDonationsComponent,
     NavbarComponent,
-    RegisterGodmothersComponent
+    RegisterGodmothersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
