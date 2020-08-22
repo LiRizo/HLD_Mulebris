@@ -43,7 +43,7 @@ const route: Routes = [
     component: DonationsComponent
   },
   {
-    path: 'DataDonationsComponent',
+    path: 'datadonations',
     component: DataDonationsComponent
   },
   {

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mulebris"
+    }
+  },
+  "defaultProject": "mulebris",
+  "cli": {
+    "analytics": "b2c6a524-34cf-4e36-9d05-f50c4743a128"
+  }
 }
