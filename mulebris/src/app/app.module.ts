@@ -45,7 +45,7 @@ const route: Routes = [
     component: TimeGodmothersComponent
   },
   {
-    path: 'specialistcomponent',
+    path: 'specialist',
     component: SpecialistComponent
   },
   {
