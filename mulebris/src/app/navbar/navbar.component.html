@@ -30,8 +30,10 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalPacienteForm">Como
               paciente</a>
-            <a class="dropdown-item" routerLink='/profilegodmothers' href="#">Como Madrina</a>
-            <a class="dropdown-item" routerLink='/profilespecialist' href="#">Como Especialista</a>
+              <a class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalMadrinaForm">Como
+                Madrina</a>
+                <a class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalEspecialistaForm">Como
+                  Especialista</a>
           </div>
         </li>
       </ul>
@@ -61,7 +63,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content" style="background-color: #79C27B;">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Ingresar como paciente</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Ingresar como<h4 class="modal-title w-100 font-weight-bold" style="color: #90107F;">paciente</h4></h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -77,16 +79,81 @@
 
           <i class="fas fa-lock prefix grey-text"></i>
           <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Contraseña">
+          <span class="psw">Olvide mi ¿<a href="#">Contraseña</a>?</span>
           <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
-
         </div>
-
       </div>
       <div class="modal-footer d-flex justify-content-center">
         <button type="button" class="btn" style="background-color: #EBEBE3;">Iniciar sesión</button>
       </div>
-
-      <span class="psw">Olvide mi<a href="#"> contraseña</a>?</span>
     </div>
   </div>
 </div>
+
+<!--Modal de madrina-->
+<div class="modal fade" id="modalMadrinaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #79C27B;">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Ingresar como<h4 class="modal-title w-100 font-weight-bold" style="color: #90107F;">madrina</h4></h4>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-2">
+        <div class="md-form mb-3">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate" placeholder="E-mail o Nombre">
+          <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
+        </div>
+
+        <div class="md-form mb-3">
+
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Contraseña">
+          <span class="psw">Olvide mi ¿<a href="#">Contraseña</a>?</span>
+          <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn" style="background-color: #EBEBE3;">Iniciar sesión</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal de Especialista-->
+<div class="modal fade" id="modalEspecialistaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #79C27B;">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Ingresar como<h4 class="modal-title w-100 font-weight-bold" style="color: #90107F;">especialista</h4></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-2">
+        <div class="md-form mb-3">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate" placeholder="E-mail o Nombre">
+          <label data-error="wrong" data-success="right" for="orangeForm-name"></label>
+        </div>
+
+        <div class="md-form mb-3">
+
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Contraseña">
+          <span class="psw">Olvide mi ¿<a href="#">Contraseña</a>?</span>
+          <label data-error="wrong" data-success="right" for="orangeForm-pass"></label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn" style="background-color: #EBEBE3;">Iniciar sesión</button>
+      </div>
+    </div>
+  </div>
+</div>
+
