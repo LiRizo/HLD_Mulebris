@@ -1,27 +1,12 @@
-# Mulebris
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# ![MULEBRIS]
+(mulebris/src/assets/img/mLogo.png)
+## Preámbulo
+Esta herramienta que está diseñada para aquellas mujeres que han sufrido diversos abusos y necesitan apoyo profesional, especialmente entre las mujeres. Dandoles libertad para que puedan decidir con quién y por qué atenderse sin esperar a que agentes externos las designen. 
+Mulebris fue creado por y para mujeres, cerrando la brecha en la toma de decisiones de la que a menudo nos vemos privadas y no nos permite comentar sobre nuestro cuerpo, especialmente en esos momentos importantes e íntimos. Esta aplicación sererá la nueva alida en nuestra lucha.
+## Demo
+Para que conozcan mas de MULEBRIS, los invitamos a nuestro estapacio <>
+## Preview
+Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
+## Proceso
+Links de desarrollo 
+* <https://trello.com/b/5JO1j5lW/hackaton> 
