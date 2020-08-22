@@ -16,9 +16,9 @@ import { ProfileGodmothersComponent } from './components/profile-godmothers/prof
 import { ProfileSpecialistComponent } from './profile-specialist/profile-specialist.component';
 import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
 
-import { RegisterGodmothersComponent } from "./components/register-godmothers/register-godmothers.component";
 import { RegisterSpecialistComponent } from './register-specialist/register-specialist.component';
 import { PatientRegisterComponent } from './components/patient-register/patient-register.component';
+import { RegisterGodmothersComponent } from './register-godmothers/register-godmothers.component';
 
 import { SpecialistComponent } from './specialist/specialist.component';
 import { TimeGodmothersComponent } from './components/time-godmothers/time-godmothers.component';
@@ -86,7 +86,6 @@ const route: Routes = [
     HomeComponent,
     TimeGodmothersComponent,
     ProfileGodmothersComponent,
-    RegisterGodmothersComponent,
     DonationsComponent,
     PatientRegisterComponent,
     PatientProfileComponent,
@@ -94,7 +93,8 @@ const route: Routes = [
     RegisterSpecialistComponent,
     ProfileSpecialistComponent,
     DataDonationsComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegisterGodmothersComponent
   ],
   imports: [
     BrowserModule,
