@@ -10,17 +10,21 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { TimeGodmothersComponent } from './components/time-godmothers/time-godmothers.component';
-import { ProfileGodmothersComponent } from './components/profile-godmothers/profile-godmothers.component';
-import { RegisterGodmothersComponent } from './components/register-godmothers/register-godmothers.component';
-import { DonationsComponent } from './components/donations/donations.component';
-import { PatientRegisterComponent } from './components/patient-register/patient-register.component';
-import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
-import { SpecialistComponent } from './specialist/specialist.component';
-import { RegisterSpecialistComponent } from './register-specialist/register-specialist.component';
-import { ProfileSpecialistComponent } from './profile-specialist/profile-specialist.component';
-import { DataDonationsComponent } from './data-donations/data-donations.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
+import { ProfileGodmothersComponent } from './components/profile-godmothers/profile-godmothers.component';
+import { ProfileSpecialistComponent } from './profile-specialist/profile-specialist.component';
+import { PatientProfileComponent } from './components/patient-profile/patient-profile.component';
+
+import { RegisterGodmothersComponent } from "./components/register-godmothers/register-godmothers.component";
+import { RegisterSpecialistComponent } from './register-specialist/register-specialist.component';
+import { PatientRegisterComponent } from './components/patient-register/patient-register.component';
+
+import { SpecialistComponent } from './specialist/specialist.component';
+import { TimeGodmothersComponent } from './components/time-godmothers/time-godmothers.component';
+
+import { DonationsComponent } from './components/donations/donations.component';
+import { DataDonationsComponent } from './data-donations/data-donations.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -33,10 +37,6 @@ const route: Routes = [
   {
     path: 'home',
     component: HomeComponent
-  },
-  {
-    path: 'registergodmothers',
-    component: RegisterGodmothersComponent
   },
   {
     path: 'donations',
@@ -55,12 +55,28 @@ const route: Routes = [
     component: SpecialistComponent
   },
   {
-    path: 'RegisterSpecialistComponent',
+    path: 'registergodmothers',
+    component: RegisterGodmothersComponent
+  },
+  {
+    path: 'registerspecialist',
     component: RegisterSpecialistComponent
   },
   {
-    path: 'PatientRegisterComponent',
+    path: 'patientregister',
     component: PatientRegisterComponent
+  },
+  {
+    path: 'profilegodmothers',
+    component: ProfileGodmothersComponent
+  },
+  {
+    path: 'profilespecialist',
+    component: ProfileSpecialistComponent
+  },
+  {
+    path: 'patientprofile',
+    component: PatientProfileComponent
   },
 ]
 
