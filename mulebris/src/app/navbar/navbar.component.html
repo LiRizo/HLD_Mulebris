@@ -1,52 +1,66 @@
 <router-outlet></router-outlet>
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #90107F;">
+<nav class="navbar navbar-expand-lg navbar-light navS">
   <div routerLink='/home'>
-    <img width="100" alt="moon-gold Logo" src="../assets/img/mulebrisLogo.png" />
+    <img width="100" alt="Mulebris" src="../assets/img/mulebrisLogo.png" />
   </div>
-
-  <div class='role'>
-    <button type="button" routerLink='/timegodmothers' class="btn mr-2  ml-5 opa"
-      style="background-color: #EBEBE3;">Madrinas</button>
-    <button type="button" routerLink='/specialist' class="btn mr-2 opa"
-      style="background-color: #EBEBE3;">Especialistas</button>
-    <button type="button" routerLink='/donations' class="btn mr-5 opa" style="background-color: #EBEBE3;">Donar</button>
-  </div>
-  <!--Hamburguesa-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-    <div class="d-flex justify-content-end">
-    <div class="dropdown">
-      <button class="btn btn-outline dropdown-toggle opa" type="button" id="dropdownMenuButton"
-      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-color: #C60F8E; background-color: #EBEBE3">
-        ingresar
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPacienteForm">Como paciente</a>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMadrinaForm">Como Madrina</a>
-        <a class="dropdown-item" href="#" data-target="#modalEspecialistaForm">Como Especialista</a>
-      </div>
-    </div>
-  </div>
-
-      <div class="d-flex justify-content-end">
-      <div class="dropdown">
-        <button class="btn btn-outline dropdown-toggle opa" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false" style="border-color: #C60F8E; background-color: #EBEBE3">
-        Registrarse
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" routerLink='/patientregister'>Como paciente</a>
-          <a class="dropdown-item" href="#" routerLink='/registergodmothers'>Como Madrina</a>
-          <a class="dropdown-item" href="#" routerLink='/registerspecialist'>Como Especialista</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <div class="d-flex justify-content-end ml-5 mr-3">
+          <button type="button" routerLink='/timegodmothers' class="btn mt-1 opa">Madrinas</button>
         </div>
-      </div>
-    </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex justify-content-end  mr-3">
+          <button type="button" routerLink='/specialist' class="btn mt-1 opa">Especialistas</button>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex justify-content-end mr-3">
+          <button type="button" routerLink='/donations' class="btn mt-1 opa">Donar</button>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="d-flex justify-content-end">
+          <div class="dropdown">
+            <button class="btn btn-outline mt-1 ml-5 mr-3 dropdown-toggle opa" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              style="border-color: #C60F8E;">
+              ingresar
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPacienteForm">Como paciente</a>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalMadrinaForm">Como Madrina</a>
+              <a class="dropdown-item" href="#" data-target="#modalEspecialistaForm">Como Especialista</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="d-flex justify-content-end">
+          <div class="dropdown">
+            <button class="btn btn-outline mt-1 mr-3 dropdown-toggle opa" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              style="border-color: #C60F8E;">
+              Registrarse
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" routerLink='/patientregister'>Como paciente</a>
+              <a class="dropdown-item" href="#" routerLink='/registergodmothers'>Como Madrina</a>
+              <a class="dropdown-item" href="#" routerLink='/registerspecialist'>Como Especialista</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <!--Modal de Paciente-->
 <div class="modal fade" id="modalPacienteForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
