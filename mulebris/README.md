@@ -1,4 +1,4 @@
-# ![MULEBRIS]
+# MULEBRIS 
 (mulebris/src/assets/img/mLogo.png)
 ## Preámbulo
 Esta herramienta que está diseñada para aquellas mujeres que han sufrido diversos abusos y necesitan apoyo profesional, especialmente entre las mujeres. Dándoles libertad para que puedan decidir con quién y por qué atenderse sin esperar a que agentes externos las designen. 
